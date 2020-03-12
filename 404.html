@@ -13,49 +13,12 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="assets/player-grid.css">
-<link rel="stylesheet" href="styles.1b36eda88cf3b2162019.css"></head>
+<link rel="stylesheet" href="styles.c923a0bb14c44021a3d2.css"></head>
 
 <body>
 	<app-root></app-root>
 
-	<script src="assets/anime.min.js"></script>
-	<script src="assets/main-for-menu.js"></script>
-	<script>
-		setTimeout(function () {
-			var navEl = document.querySelector('nav.menu'),
-				revealer = new RevealFx(navEl),
-				closeCtrl = navEl.querySelector('.btn--close');
-
-			document.querySelector('.btn--menu').addEventListener('click', function () {
-				revealer.reveal({
-					bgcolor: '#C3142D',
-					duration: 400,
-					easing: 'easeInOutCubic',
-					onCover: function (contentEl, revealerEl) {
-						navEl.classList.add('menu--open');
-						contentEl.style.opacity = 1;
-					},
-					onComplete: function () {
-						closeCtrl.addEventListener('click', closeMenu);
-					}
-				});
-			});
-
-			function closeMenu() {
-				closeCtrl.removeEventListener('click', closeMenu);
-				navEl.classList.remove('menu--open');
-				revealer.reveal({
-					bgcolor: '#C3142D',
-					duration: 400,
-					easing: 'easeInOutCubic',
-					onCover: function (contentEl, revealerEl) {
-						navEl.classList.remove('menu--open');
-						contentEl.style.opacity = 0;
-					}
-				});
-			}
-		}, 1000);
-	</script>
-<script src="runtime-es2015.edb2fcf2778e7bf1d426.js" type="module"></script><script src="runtime-es5.edb2fcf2778e7bf1d426.js" nomodule defer></script><script src="polyfills-es5.6696c533341b95a3d617.js" nomodule defer></script><script src="polyfills-es2015.2987770fde9daa1d8a2e.js" type="module"></script><script src="main-es2015.4de63443d4ab47e91e4d.js" type="module"></script><script src="main-es5.4de63443d4ab47e91e4d.js" nomodule defer></script></body>
-
+	<script src="assets/js/anime.min.js"></script>
+	<script src="assets/js/main-for-menu.js"></script>
+<script src="runtime-es2015.edb2fcf2778e7bf1d426.js" type="module"></script><script src="runtime-es5.edb2fcf2778e7bf1d426.js" nomodule defer></script><script src="polyfills-es5.6696c533341b95a3d617.js" nomodule defer></script><script src="polyfills-es2015.2987770fde9daa1d8a2e.js" type="module"></script><script src="main-es2015.255e928abae289b9b107.js" type="module"></script><script src="main-es5.255e928abae289b9b107.js" nomodule defer></script></body>
 </html>
